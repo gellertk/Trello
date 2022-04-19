@@ -13,7 +13,6 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     private let textLabel: UILabel = {
         let label = UILabel()
-        label.text = "TEXT"
         
         return label
     }()
@@ -31,12 +30,17 @@ class CardCollectionViewCell: UICollectionViewCell {
         textLabel.text = text
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.cornerRadius = 5
+    }
+    
 }
 
 private extension CardCollectionViewCell {
     
     func setupView() {
-        backgroundColor = .blue
+        backgroundColor = .systemGreen
         [textLabel].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview($0)

@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		CB5D70A5280F01A800AB41F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70A4280F01A800AB41F9 /* AppDelegate.swift */; };
 		CB5D70A7280F01A800AB41F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70A6280F01A800AB41F9 /* SceneDelegate.swift */; };
-		CB5D70A9280F01A800AB41F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70A8280F01A800AB41F9 /* ViewController.swift */; };
-		CB5D70AC280F01A800AB41F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5D70AA280F01A800AB41F9 /* Main.storyboard */; };
+		CB5D70A9280F01A800AB41F9 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70A8280F01A800AB41F9 /* BoardViewController.swift */; };
 		CB5D70AE280F01AB00AB41F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5D70AD280F01AB00AB41F9 /* Assets.xcassets */; };
 		CB5D70B1280F01AB00AB41F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5D70AF280F01AB00AB41F9 /* LaunchScreen.storyboard */; };
+		CB5D70B9280F037100AB41F9 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70B8280F037100AB41F9 /* BoardView.swift */; };
+		CB5D70BC280F039500AB41F9 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70BB280F039500AB41F9 /* Board.swift */; };
+		CB5D70C2280F0B2000AB41F9 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70C1280F0B2000AB41F9 /* CardCollectionViewCell.swift */; };
+		CB5D70C4280F0B9800AB41F9 /* BoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70C3280F0B9800AB41F9 /* BoardCollectionViewCell.swift */; };
+		CB5D70C6280F16E300AB41F9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D70C5280F16E300AB41F9 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB5D70A1280F01A800AB41F9 /* Trello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5D70A4280F01A800AB41F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5D70A6280F01A800AB41F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB5D70A8280F01A800AB41F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB5D70AB280F01A800AB41F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB5D70A8280F01A800AB41F9 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		CB5D70AD280F01AB00AB41F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5D70B0280F01AB00AB41F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB5D70B2280F01AB00AB41F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5D70B8280F037100AB41F9 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		CB5D70BB280F039500AB41F9 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		CB5D70C1280F0B2000AB41F9 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		CB5D70C3280F0B9800AB41F9 /* BoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		CB5D70C5280F16E300AB41F9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		CB5D70A3280F01A800AB41F9 /* Trello */ = {
 			isa = PBXGroup;
 			children = (
-				CB5D70A4280F01A800AB41F9 /* AppDelegate.swift */,
-				CB5D70A6280F01A800AB41F9 /* SceneDelegate.swift */,
-				CB5D70A8280F01A800AB41F9 /* ViewController.swift */,
-				CB5D70AA280F01A800AB41F9 /* Main.storyboard */,
+				CB5D70BE280F079300AB41F9 /* Model */,
+				CB5D70BA280F037A00AB41F9 /* Board */,
+				CB5D70BD280F064F00AB41F9 /* SupportingFiles */,
 				CB5D70AD280F01AB00AB41F9 /* Assets.xcassets */,
 				CB5D70AF280F01AB00AB41F9 /* LaunchScreen.storyboard */,
 				CB5D70B2280F01AB00AB41F9 /* Info.plist */,
 			);
 			path = Trello;
+			sourceTree = "<group>";
+		};
+		CB5D70BA280F037A00AB41F9 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				CB5D70A8280F01A800AB41F9 /* BoardViewController.swift */,
+				CB5D70B8280F037100AB41F9 /* BoardView.swift */,
+				CB5D70C3280F0B9800AB41F9 /* BoardCollectionViewCell.swift */,
+				CB5D70C1280F0B2000AB41F9 /* CardCollectionViewCell.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		CB5D70BD280F064F00AB41F9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CB5D70A4280F01A800AB41F9 /* AppDelegate.swift */,
+				CB5D70A6280F01A800AB41F9 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CB5D70BE280F079300AB41F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB5D70BB280F039500AB41F9 /* Board.swift */,
+				CB5D70C5280F16E300AB41F9 /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +163,6 @@
 			files = (
 				CB5D70B1280F01AB00AB41F9 /* LaunchScreen.storyboard in Resources */,
 				CB5D70AE280F01AB00AB41F9 /* Assets.xcassets in Resources */,
-				CB5D70AC280F01A800AB41F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +173,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5D70A9280F01A800AB41F9 /* ViewController.swift in Sources */,
+				CB5D70A9280F01A800AB41F9 /* BoardViewController.swift in Sources */,
+				CB5D70B9280F037100AB41F9 /* BoardView.swift in Sources */,
+				CB5D70BC280F039500AB41F9 /* Board.swift in Sources */,
+				CB5D70C2280F0B2000AB41F9 /* CardCollectionViewCell.swift in Sources */,
 				CB5D70A5280F01A800AB41F9 /* AppDelegate.swift in Sources */,
 				CB5D70A7280F01A800AB41F9 /* SceneDelegate.swift in Sources */,
+				CB5D70C4280F0B9800AB41F9 /* BoardCollectionViewCell.swift in Sources */,
+				CB5D70C6280F16E300AB41F9 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB5D70AA280F01A800AB41F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB5D70AB280F01A800AB41F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB5D70AF280F01AB00AB41F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +326,6 @@
 				INFOPLIST_FILE = Trello/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +353,6 @@
 				INFOPLIST_FILE = Trello/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

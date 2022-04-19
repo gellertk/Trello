@@ -9,20 +9,14 @@ import UIKit
 
 class BoardView: UIView {
     
-    private let boardCollectionViewFlowLayout: UICollectionViewFlowLayout = {
+    lazy var boardCollectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = .zero
-        flowLayout.minimumInteritemSpacing = 30
-        flowLayout.minimumLineSpacing = 30
         flowLayout.scrollDirection = .horizontal
         
-        return flowLayout
-    }()
-    
-    lazy var boardCollectionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: boardCollectionViewFlowLayout)
-        collectionView.backgroundColor = .black
-        collectionView.register(CardCollectionViewCell.self, forCellWithReuseIdentifier: CardCollectionViewCell.reuseId)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.register(BoardCollectionViewCell.self, forCellWithReuseIdentifier: BoardCollectionViewCell.reuseId)
+        collectionView.dragInteractionEnabled = true
         collectionView.isPagingEnabled = true
         
         return collectionView

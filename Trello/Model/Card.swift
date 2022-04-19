@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Card: Hashable {
+    let id = UUID()
+    let text: String
+}
